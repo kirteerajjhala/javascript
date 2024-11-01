@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scope in javascript</h1>
+    <script>
+               var username="Kirteeraj jhala"
+    //             const userage= 19
+
+    //    function add(){
+    //     const x=5;
+    //     const y=8
+    //     console.log(x+y);// ye variable sirf func ke under hi use kiye ja skte hai 
+    //     // bahar use kiya to error mile gi
+    //     const username="Kirteeraj jhala" // vo bhi variable hum jo bhar define krte hai vo hum kisi bhi function ke under access kr skte hai par func ka variable bahar use nhi kr skte hai
+
+    //    }     
+       
+    //    add()   
+       
+    //    console.log(
+    //     "the Program is ended"
+    //    ); 
+       /// or window obj me var ka use kr le koi variable banate hai vo window me jati hai means global me
+       /// or script me let oe const vale variable jate hai
+       ///or hum kisi define variable ko console k e under window. kr ke bhi use kr skte ahi
+       /// screenshot le liya hai scope ka oe usme vo golabal ko window obj bol raha hai
+       /// or function ke liye alg scope banata hai usko local bolte hai 
+       //// koi bhi func jab pura execute ho jata ha ito fir uske under ke varibale jo bhi 
+       // rahte hai sab distroye ho jate hai or function bhi destroy ho jata hai 
+      
+
+
+
+       ////////////lexical and block scope
+
+      //  function subtract(){
+      //       let x=4;
+      //       let y=5
+      //       console.log(x+y);
+      //       let z=10
+      //       console.log(z);
+            // child() /// ye subtract func 2no func ko call kr skta hai q ki uska scope hai 
+          
+
+          // function child(){
+          //   const childname="kirteeraj"
+          //   console.log(childname);
+          //  console.log(z);
+        //    console.log(grandchildName);/// ye esko call ni kr  skta hai 
+          //   grandchild() //ye child func grandfun func ko call kr skta hai q ki uska scope hai 
+          
+
+          // function grandchild(){
+          // //   const grandchildName="molu"
+          //   console.log(grandchildName); //// ye grandchild ke pass sab func ka access hai to usko hum lexical scope bolte hai
+          //   console.log(z);/// inner func ke under kisi outer func ke varibale ka use krte hai to vo closure ban jata hai // or yahah ye func kisi bhi func ko call ni kr skta hai
+      //     }
+      //   }
+      //  }/// yaha par grandchild sab ke variable ko use kr skta hai 
+      //  //// par do func grandchild ke variable ke use nhi ke skte hai 
+
+      //    subtract() /// esko aklee ko call krenge to sirf uska hi func chale ga
+    
+
+
+/*
+
+        /////////////////////////// block scope /////////////////////////////
+        let or const block scope hote hai var ni hota hai block scope
+        for exmaple {} ke under ke jitna bhi content hota hai usko block scope bolte hai
+
+      
+        {
+         const k1="kirh4uh"
+          console.log(k1);
+       }
+          console.log(k1); /// esme error dega const or let block scope hai vo sirf {} ke under tak hi chalte hai 
+
+
+          
+        {
+         var  k1="kirh4uh"
+          console.log(k1);
+       }
+          console.log(k1); /// var me  kooi dikkat ni hai qki var block scope nhi nahi silye koi dikkat nhi hai 
+
+
+*/
+
+
+    </script>
+</body>
+</html>

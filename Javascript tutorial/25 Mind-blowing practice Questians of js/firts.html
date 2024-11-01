@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// // 1- given a string, reverse each word in the sectence 
+// // example
+// // kirteeraj jhala => jareetrik alahj
+
+// let str ="saare jaha se achha hindustaan humara"
+// let finalans= str.split(" ")
+// .map(function(word) {
+//        return word.split("").reverse().join("")
+// });
+// console.log(finalans.join(" ")); ///output eraas ahaj es ahhca naatsudnih aramuh
+
+
+
+//  2 how to check if an object is an array or not ?
+
+// function checkArray(num) {
+//      return Array.isArray(num);// Arrar sath me likhna padega or koi sa word ni likh skte hai mhi to error de ga 
+// }
+// console.log(checkArray([1,2,3,4]));
+// console.log(checkArray({}));
+// console.log(checkArray(" "));
+
+
+// /// 3- how to an empty an array in javascript // array ko empty kese kre
+// const arr=[1,2,3,4,56,7]
+// arr.length=0;  // array empty ho gay
+
+/// 4- hOW WOULD you check if a number is an integer 
+//Number.isInteger(455) esse bhi pta kr skte hai or aage Number likhan hi padega or kuch ni likha skte hai uski jagah 
+// let a= 10;
+// if(a%1==0){
+//     console.log("this is interger");
+// }
+// else{
+//     console.log("that is not intger");
+// }
+
+
+/////5- Make this work 
+// duplicate([1,2,3,4,5,6]) ////output [1,2,3,4,5,6,1,2,3,4,5,6]
+// function duplicate(number) {
+//     return number.concat(number);
+// }
+// console.log(duplicate([1,2,3,4,5,6]));
+///a.toString().split("").reverse().join("")
+
+/////6- Write a javaScript function that reverse a number
+// function reversekrobhai(num){
+//   return  typeof Number(num.toString().split("").reverse().join(""))
+   
+// }
+// console.log(reversekrobhai(456)); ///output 654
+
+
+
+//8- Write a javascript function that return a passeed string with letter in alphabetical oder
+// function string1(str){
+//         return str.split("").sort().join("");
+// }
+// console.log(string1("kirteeraj"));//output :-aeeijkrrt
+
+
+
+///9:-write a javascript function that accepts a string as a paremeter and converts 
+// that first letter of each word of the string in uppercase
+
+function capitalizekro(letter){
+  let k1= letter.split(" ").map(function(word){
+   return word.charAt(0).toUpperCase() + word.substr()
+})
+console.log(k1);
+
+}
+console.log(capitalizekro("kirteeraj jhala is big compnay owner"));//44:32 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+ 

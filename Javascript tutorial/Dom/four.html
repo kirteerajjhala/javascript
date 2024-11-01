@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body  style="background-color: #212121; color: #ffff;">
+    <ul class="language" style="padding-left: 0;">
+        <li>JavaScript</li>
+    </ul>
+
+<script>
+    function addlanguage(langName) {
+        const li= document.createElement("li")
+        li.innerText=langName
+         const sel= document.querySelector(".language")
+         sel.appendChild(li) // append propersties sytax parent.append.child
+    }
+    addlanguage("HTML&CSS")
+    addlanguage("C")
+    addlanguage("Java")
+    addlanguage("Python")
+    
+   
+// edit
+  const secondlang= document.querySelector("li:nth-child(2)")//:nth-child(2) maens 2nd li
+ //  secondlang.innerHTML="kbfrehgiuhrg" comman use 
+
+ const newli=document.createElement("li");
+ newli.textContent="Hii" // textcontent bhi innerhtml jesa hi kam krta hai 
+ secondlang.replaceWith(newli)
+
+// remove 
+ const removelastelement=document.querySelector("li:last-child")
+ removelastelement.remove()
+</script>
+
+</body>
+</html>

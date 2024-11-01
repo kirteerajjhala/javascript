@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>higher oder function</h1>
+
+    <script>
+         /// higher oder menas yah hai ki kisi bhi function me kisi dusre func ko pass krna
+
+         function a(meass){
+            // console.log(typeof meass);
+            console.dir(meass);
+            meass()
+         }
+
+        //  a("hiiii")
+        //  a({username:"kirteeraj jhala",
+        //     age :19
+        //  })
+        //  a([1,2,3,45,6,7])
+
+         ///// array or obj ka typeof object hi aayega
+         ///string ka string 
+        /// function ka typeof function hi batatat hai par vo bhi ek obj ke 
+        /// usko check krne ke liye console.dir krenge to finction ka bhi vo object batye ga
+
+
+            //// enko callback function bolte hai
+            // function b(){
+            //     console.log("hiiiiiiiiiiiii");
+                
+            // }
+            // a(b)///yaha par b() pura meass ke pass chale gya hai 
+
+            // a(
+            // function b(){
+            //     console.log("hiiiiiiiiiiiii");
+                
+            // }) yese bhi kr skte hai
+
+    </script>
+</body>
+</html>

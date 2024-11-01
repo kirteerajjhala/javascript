@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger
+        // sayhii()
+        // const username="kirteeraj"
+        // let userage=19
+        // function sayhii(){
+        //     const a =3;
+        //     const b=7;
+        //    console.log(addtwonumber(a,b));
+        // }
+        // function addtwonumber(a,b){
+        //     return a+b
+        // }
+
+
+        // ///hosting  important for interview
+        debugger
+        // console.log(a);
+        // // var a="kirteeraj"// me undefined deat hai or copy me bhi likha hai eske bare me
+        // const a="kirteeraj" // let me bhi same error dega
+        //     sayhii() /// sayhii func host ho gya hai ye aache se chale ga koi error nhi dega
+        // function sayhii(){
+        //     console.log("Hello wolrd");
+        // }
+        // ye func q chala unki sab se pahle memory ceration phase hota hai usko koi ni ruk skta hai hoone se vo aapne aap hi ho jata hai
+        //fir uske bad code execuaion phase chalta hai
+
+/*
+        hii();//index.html:37  Uncaught ReferenceError: Cannot access 'hii' before initialization
+            // yesa  error dega
+
+            //// function expression bolte hai esko  or vo vale func ko to vahi bolte hai func delcration
+            /// esko expression isliye bolte hai q ki = ka us krte hai func bananan ke liye hum
+          let hii=function(){
+            console.log("hiiiii");
+        }
+        /// or ye func host ni ho ga or na hi chale ga error dega uuper calll kiya hai isliye q ki essme humne let const ka us kiya hai isliye vo 
+        /// same kam kre ga let or const ka or var me undefiend batye ga
+        /// agr hum func ko func ko define krene ke bad niche call krte to function chal jata
+
+
+*/        
+
+// let hii =function sayhii(){ /// yaha par hii vala func hi chale ga bss sayhii() func ni hai 
+//     console.log("eknrengioe");
+// }
+// hii();
+
+let hii =function sayhii(){ /// esko anonymous func bolte hai matlb ki pahle func bannna lo fir usko kisi variable me store kr dena
+    console.log("eknrengioe");
+}
+
+
+    </script>
+</body>
+</html>

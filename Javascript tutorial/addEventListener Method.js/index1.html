@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <h1>1</h1>
+    </div>
+     <script>
+        ////// 1 method of event listenr
+        // const element=document.getElementById("header").onmouseover=abc; /// sab se pahle jis pe addevent krna hai usko slect kro uske bad  .onmouseover=abc; ye likho abc function ka name hai 
+        // function abc() {// fir jo name function ka vahah likha tha vo yaha likho or usi name ka functin bannoo fir wapise se usko target kro jis properties apply krni ho
+        //     document.getElementById("header").style.background="red"
+        // }
+
+
+        // //// Method-2 eska ek benifit bhi hai ye hai ki esme hum multiple addEventlistern bannaa skte hai 
+        // const element1=document.getElementById("header").addEventListener("mouseenter",xyz);
+        // function xyz() {
+        //    this.style.border="2px solid red"
+        //   // document.getElementById("header") under ye likhne ki jarurta ni bss  this likh do
+            
+    
+              
+        // }
+
+        /////Method3
+        // const element2=document.getElementById("header").addEventListener("click",function(){
+        //     let k1 = document.getElementById("header").style.color="red";
+            
+        // });
+
+
+
+
+         
+       
+
+     </script>
+</body>
+</html>

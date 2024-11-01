@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chai or Code</title>
+</head>
+<body style="background-color: #212121; color: #ffff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">rsdaythu</div>
+        <div class="day">friday</div>
+    </div>
+</body>
+<script>
+  const parent=  document.querySelector(".parent");// parent ko selct kiya 
+//   console.log(parent);// parent ko print
+  // console.log(parent.children); // children bhi ek prperties hoti hai parent ki yaha par childerns ko select kiya hai 
+  // console.log(parent.children[0].innerText);
+//   for (let i = 0; i <parent.children.length; i++) {
+// console.log(parent.children[i].innerHTML);
+//   }
+
+//   parent.children[1].style.color="red"
+//   console.log(parent.firstElementChild);//ye hume parent se child pe move krwa rahe hai
+//   console.log(parent.lastElementChild);
+  
+  // //ab child se parent pe move 
+  const dayone=document.querySelector(".day")
+  console.log(dayone); //  <div class="day">Monday</div>
+  console.log(dayone.parentElement.style.color="red");
+  /* output 
+        <div class="day">Monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">rsdaythu</div>
+        <div class="day">friday</div>
+    </div>
+  //   */
+  // console.log(dayone.nextElementSibling); // <div class="day">tuesday</div> sibling ka mtalb bhai monday ka tueday tuseday ka wednsday
+  // console.log("Nodes",parent.childNodes);
+
+</script>
+</html> 

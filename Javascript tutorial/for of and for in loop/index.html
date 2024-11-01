@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    " use strict";
+    //     let name= "kirteeraj jhala"
+    //     for (const element of name) {
+    //         console.log(element);
+    //     }/// elemet variable ka  name kuch bhi de skte hai
+
+    //     let arr =['kirteeraj','1234','dnnr','rgr']
+    //     for (const element1 of arr) {
+    //         console.log(element1);
+    //     }
+
+    //    /////////////////////// / //// forof loop ka use obj me nhi kr skte hai /////////////////////
+    //     const k1={
+    //         name : "kirteeraj ",
+    //         lastname: "jhala",
+    //         age: 19,
+    //         village :"rangaon"
+    //     };
+        // for (const element2 in k1) {
+        //     console.log(element2,':',k1[element2]);
+        // } //// ye thoda hard ho jata hai krna 
+
+
+        // ////eska use kr ke ye kr skte hai 
+        // const personkey= Object.keys(k1) /// esme vo boj ki keys dega
+        // const personvalue= Object.values(k1) /// esme vo obj ki values hun dega
+        // const personEntries=Object.entries(k1) /// esme dono dega par ek array ke form me 
+        // //// ye 3no me se koi ek use krna hai
+        // for (const element of personkey) {
+        //     console.log(k1[element]);///ye value deag
+        //     console.log(element);/// ye obj ki keys dega
+        // }
+
+
+
+        // let check = "lastname" in k1
+        // console.log(check);//// ye batatat hai ki kisi boj ke under vo key present hai ya nhi
+        // /// ye ans only true or flase me deti hai usko jisko bhi serach krna ho usko " " enke under likhna padega
+
+
+
+
+
+
+
+
+
+        ////////////////for each loop//////////////////////////
+
+////for each function ek function hota hai isliye hume usko calll krne ke liye functions ka use krna pdta hai
+
+// let array = ['apple','bannna','tamarind','pea'];
+// array.forEach(function(fruits){
+//         console.log(fruits);
+// })
+
+
+// let array = ['apple','bannna','tamarind','pea'];
+// array.forEach((fruits)=>{
+//         console.log(fruits);
+// })//// foreach loop kuch ni return krta hai undefiend krta hai
+
+
+//              ///////////////////////////////////MAP//////////////////////////////////////
+// let array = ['apple','bannna','tamarind','pea'];
+// let result =array.map((fruits,index)=>{ /// index index batatat hai har element ka 0 se index kisi jgahah koi sa bhi varibale likh skte hai
+//         console.log(index,fruits); /// foreach me bhi index hota hai
+//         return fruits.toUpperCase()
+// })
+// console.log(result); //// map method return krti hai
+
+
+
+
+
+//////////////////////////////////////// filter method////////////////////////////////////
+///// filter method bhi map methos same hai bss  filter or map me retrun me dono me differ hai
+/// filter me return me conditions lagti hai 
+//// return me true retun krenge to puri array dega 
+/// falsee krenge to kuch nhi dega means empty dega  
+//// or return me kuch ni dege to bhi empty string hi dega
+
+
+// const array = ['january','february','march','april','may']
+// let k2= array.filter(function(k2){
+//     console.log(k2,`leangth of string is (${k2.length})`);
+//     return k2.length >5
+// })
+// console.log(k2);
+
+////// quenstions for filter method
+
+// const student =[
+
+// {
+//     name : 'kirteeraj',
+//     age : 21
+// }
+// ,
+
+// {
+//     name : 'ritik',
+//     age : 17
+// }
+// ,
+// {
+//     name : 'raj',
+//     age : 18
+// }
+// ]
+
+// const k2 = student.filter(function(k3){
+  
+//     return k3.age >=18
+// }).map((k9)=>{/// map method name de raha hai jo 18 se uper hai unke 
+// return k9.name
+// })
+// console.log(k2);
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////Reduce////////////////////////////////////////
+
+
+// let arr = [1,2,3,4,5,6,7,8,9]
+
+// arr.reduce(( accumulator , currentvalue , index)=>{
+//     console.log(index,'this value is current',currentvalue);
+//     console.log(index,'this value is accc',accumulator);
+// },"nbkbbibb")
+
+
+
+
+
+
+
+
+
+
+////////////////////Arguments keyword/////////////////////////////////////
+
+// function add(a,b){ 
+//     console.log(arguments); /// eska use kr ke hum auguments dekh skte hai  4,5,6,78,9 ye sabhi arguments dega ye 
+// return a+b // output  :-9 ye sirf 4 ,5 ko hi  lega 
+// }
+// console.log(add(4,5,6,78,9));
+
+
+
+// function add()
+// {
+// let sum =0;
+// for (let index = 0; index < arguments.length; index++) {
+//     sum = sum+ arguments[index];
+    
+// }
+// return sum
+// }
+// console.log(add(2,3,4,56,7));
+
+
+
+
+
+
+
+
+////////////////////spread operator///////////////////////////////////////////////////
+
+//eska use 2 array or object ya string ko jodne ke liye kiya jata hai
+
+// let a1 = [1,2,3,4,5,6,7,8,9,0]
+// let a2=[0,9,8,7,6,5,4,3,2,1]
+
+// const joined= [...a1 ,...a2]
+// console.log(joined);
+
+
+// function add()
+// {
+// let sum =0;
+// for (let index = 0; index < arguments.length; index++) {
+//     sum = sum+ arguments[index];
+    
+// }
+// return sum
+// }
+// console.log(add(...joined)); /////////yaha par sab ka sum dega ye ...joined likhann padega par
+// //// ye sirf arrry or string ke liye hi hai
+
+
+
+
+// ///////////////////////////for string/////////////////////////////////////////////////
+// let s1='kirteeraj jhala ji '
+// let s2 ='ji jhala kirteeraj '
+
+// const joined1=[...s1,...s2]
+// console.log(joined1);
+
+
+
+
+
+
+
+
+// ////////////////////////////for obj/////////////////////////////////////////////////////
+// let obj= {
+// name : "raj",
+// age :90
+// };
+
+
+// const joined2={  ...obj,  name1 :"kirteeraj"   }
+// console.log(joined2);
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////rest parameter ///////////////////////
+//  rest me parematere multiple passs kr skte hai or vo parameter aaray ke form me ho jate hai or unpe for loop lga kr unko addd kr skte hai
+//// rest paremetere humhesha aage huna chahiye 
+// let a1 = [1,2,3,4,5,6,7,8,9,0] /// yahah par s=1 b=2 c=3 me ye jayenge or baki sab ...a me jaynge 
+// function add(..a,s,b,c.){  //// yahah par rest permeter a hai jo aaray bannaa rahah hai sahi elements ko 
+//     console.log(a); 
+//     let sum=0;
+//     for (let index = 0; index < a.length; index++) {
+//       sum+=a[index]
+    
+//     }
+//        return sum
+// }
+// console.log(add(...a1));////yaha spread operator hai a1
+
+
+
+
+
+
+
+
+
+// ////////// using reduce method addd/////////////////////////////////////////////////
+
+
+
+
+// let a1 = [1,2,3,4,5,6,7,8,9,0] 
+
+
+// function add(...nums) {
+   
+//     return nums.reduce((acc, pre)=>{
+ 
+//            return acc+pre
+        
+         
+           
+//     })
+// }
+
+// console.log(add(...a1));
+
+
+    </script>
+</body>
+</html>

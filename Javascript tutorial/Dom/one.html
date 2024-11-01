@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+
+    <style>
+        .test{
+            width: 600px;
+            height: 200px;
+            background-color: rgb(188, 238, 87);
+        }
+        .outer{
+            width: 500px;
+            height: 200px;
+            background-color: rgb(252, 252, 96);
+            padding: 30px;
+            
+        }
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(241, 152, 181);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+          
+            
+        }
+        .box{
+            width: 80px;
+            height: 60px;
+            background-color: #ffff;
+            border: 2px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="k1" class="k2 k3" style="display: block; color: blueviolet;" >kirteeraj jhala  <span style="display: none ;"> jii jhala ji </span></h1>
+    <ul >
+        <li>one</li>
+        <li>tow</li>
+        <li>three</li>
+        <li>four</li>
+        <a href="#">rgtreh</a>
+    </ul>
+
+        <div id="header" style="border: 2px solid red; color: aqua;" class="k1  k2 k3 k4 k5">
+            <h1>yahoo baba</h1>
+        </div>
+
+
+        <div class="outer">
+            <div class="inner">
+                <div class="box">A</div>
+                <div class="box">B</div>
+                <div class="box"id="child-3">C</div>
+                <div class="box">D</div>
+                <div class="box">E</div>
+            </div>
+        </div>
+      <b> i am  B bgfiurfgurg
+                           <dd style="margin: 0;">ehhh2ebdeffgrfg4grgtftf</dd>
+   <p> i am p gfrgfgfgdhfhfeg</p>
+   <em> i am E hhrggrbgfygyr</em>
+   <i> i am I hdefr4rf4r4g4</i>
+   <kbd> i am K fdhrfhrehfhhfhfh</kbd>
+   <q> i am Q dnienfbrbrbvbrvb</q>
+   <s> i am s dhiuehhrfgh</s>
+   <u> i am U drhfggrgrggr</u>
+   <var> i am V hduehfrf4qri</var>
+</b>
+
+<div id="test">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea totam nam magni optio repellendus modi delectus dolorum, voluptates, in et fugiat neque voluptate quis hic rerum laudantium perferendis, sequi praesentium.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis suscipit nihil et distinctio placeat dolorum sunt eligendi maiores voluptates eos praesentium cupiditate maxime fuga, deleniti, commodi aperiam at sit consequatur.
+
+</p>
+</div>
+        <ul class="list-1">
+            <li>orange</li>
+            <li>apple</li>
+            <li>grapes</li>
+            <li>bananan</li>
+        </ul>
+        <ul id="list-2">
+            <li>carrot</li>
+            <li>reddish</li>
+        </ul>
+
+    <script>
+    
+       // document.head esme vo head ko target krne lag jaye ga means head ke under ka code pura de dega
+        // document.all[9] // mrans 9 line me kon sa code hai vo sab de degaa
+// document.links html me jitni bhi links hai vo de dega array ke form me html collection ke under hai
+//document.URL url lega website ka 
+
+// const elment=document.querySelector("#header").style.backgroundColor="red" // yaha se dirct uska background color change ho jaye ga jis tag ko humne selct kiya hai 
+// console.log(elment);
+    
+
+// const elment1=document.querySelector("#header").style.border//ye vo batye ga ki jisko humne selct kiya hai usme kon kon si properties lagi hui hai or ek bar me sirf ek hi properties check kr skte hai bss
+// console.log(elment1);
+
+// const elment2=document.querySelector("#header").className="efbv" // yaha par class create ki 
+// const elment1=document.querySelector("#header").className // yaha se class dekhi or usko fir console kiya 
+// console.log(elment1); // className string ke jise batata hai 
+
+// //// / // const elment1=document.querySelector("#header").classList="nfivnv ,efifnf"
+// /////////////////// const elment2=document.querySelector("#header").classList
+// console.log(elment2); // classlist aaray ke form me batata hai class ke name
+
+
+// const elmetn = document.querySelector("#header").classList .add("k9","k11")
+//const elment1=document.querySelector("#header").classList
+// console.log(elment1); ///ye class html ki class me add ho jati hai
+
+
+// const elmetn = document.querySelector("#header").classList .remove("k1","k2")
+// const elment1=document.querySelector("#header").classList
+// console.log(elment1); //ye class html ki class me add ho jati hai yaha par jo bhi html me class hai vo remove ho jayw gi
+
+
+////parentElememt
+// const a=document.querySelector(".inner").parentElement.style.background="blue";
+// console.log(a);// yaha par .inner ha parent ourt div hai to vo select huav hai ab hum usko yaha se style bhi kr skte hai 
+
+
+
+//////childern and childern node 
+// const a=document.querySelector(".inner").childNodes/// childnode ek array ki list banana ke deta hai ki us inneer class ke under kitne childrens hai 
+//console.log(a);
+//document.querySelector(".inner").children[1].style.border="10px solid red"
+// console.log(a)
+// childern[0] me yesa de kr hi taget kr skte hai or children me hum parent node se children ko target kr skte hai 
+// childrennode sab ko target kr leta hai humahri text ko enter space ko sab koo
+
+
+
+
+// ///////firstchild,firstelmentchild ,lastchild,lastElementchild//////
+// const b = document.querySelector(".inner").firstElementChild.style.background="blue"
+// console.log(b);
+// const c = document.querySelector(".inner").lastElementChild.style.background="blue"
+// console.log(c);
+
+
+// const b = document.querySelector(".inner").firstChild
+// console.log(b); //output:- #text
+// const c = document.querySelector(".inner").lastChild
+// console.log(c);//output:- #text
+// firstchild ,lastchild bhi chioldnode or parentnode ki trah hai
+
+/////nextElementsibling,lastElementsiblings
+// const e = document.querySelector("#child-3").nextElementSibling.innerHTML//output D
+
+// console.log(e);
+// const f = document.querySelector("#child-3").previousElementSibling.innerHTML //output B
+// console.log(f);
+
+
+/////DOM create Mehtod
+// 1 tag <P> </P> create element
+// 2 text  this is just text , create TextNode 
+// // 3 comment Creatcomment
+// let  newelement = document.createElement("h1");
+// console.log(newelement);
+
+// let newtext=document.createTextNode("hfgruguyof");
+//  console.log(newtext);
+
+// let newcomment = document.createComment("this is new comment ")
+// console.log(newcomment);
+
+// // //////AppendChild,insertBefore
+// // uuper jo bananye hai usko dekho appendchild ka sentax yaha hai ki jisme append krna hai usko pahle likho fir apppend() ke under usko likhoo
+// newelement.appendChild(newtext) // output <div>hfgruguyof</div>
+// // ab <div>hfgruguyof</div> esko html me append kran hai 
+// document.querySelector(".test").appendChild(newelement)
+
+
+
+///practiess
+// let newtag= document.createElement("h2")
+
+// let newtext=document.createTextNode("kirteerah is very big and snart person in the wrold")
+// let app1=newtag.appendChild(newtext)
+// console.log(app1);
+// document.querySelector(".inner").appendChild(newtag).style.color="red"
+
+
+//insertAdjacentElement <p></p> ye tag banan deta hai or append kr deta hai
+
+//inserAdjacentHTML <p>this is just text</p> ye yesa krta hai or apped kr deta hai
+
+// insertAdjacentText /// this is just text ye bss text kr skte hai or sath hi sath esko append
+
+//insertAdjacent positions
+// beforbegin
+// afterbegin
+// beforeend
+// afterend
+
+//  ye tino bhi same kam krte hai append or insertbefore ki tarf bss kuch diffr hai 
+// ye 3no Create or append dono ek sath kr dete hai jo ki appendchild or insertbefore ni krte hai 
+
+// let newelement=document.createElement("h2")
+// let newtext=document.createTextNode("Hii my name kirteeraj ")
+// newelement.appendChild(newtext)
+//  const target=document.querySelector(".test")
+//  const style1= target.insertAdjacentElement("beforeend",newelement)
+
+
+// ///insertAdjacentHTML me vo likhne ki jartur ni hai uuper ki do lines
+// const target=document.querySelector("body")
+// let newelement="<h1>Hii jhalaji</h1>"
+// target.insertAdjacentHTML("beforebegin",newelement)
+
+
+// ////insertAdjecentText eska kam kisi bhi banne hue tag me text add krne ke liye 
+// const target=document.querySelector(".test");
+// let newtext="Hii jhalaji";
+// target.insertAdjacentText("beforeend",newtext);
+
+
+////cloneNode
+// let taget=document.querySelector(".list-1").children[0]
+// let copyelement= taget.cloneNode(true);//<li>orange</li> ///false me ye ans aata <li class ></li> me uske attributes or tag
+// console.log(copyelement);
+// document.querySelector(".list-2").appendChild(copyelement);
+
+
+////contains() method ye batat hai ki kisi bhi parent div ke under koi children hai ya nahi 
+// /// or ye ans true false me hi deta hai 
+// let target = document.querySelector(".inner")
+// let childelmet =document.querySelector(".box")
+// let find=target.contains(childelmet)
+// console.log(find);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
